@@ -1,0 +1,74 @@
+{
+  "data": [
+    {
+      "id": "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNzQ=",
+      "name": "Portfolio",
+      "createdAt": "2023-08-17T16:26:54Z",
+      "url": "https://github.com/Souviksamanta34/Portfolio",
+      "description": "🌍 The fully editable template for a software developer portfolio allows you to highlight your accomplishments while also providing extensive information about you.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "HTML",
+          "iconifyClass": "logos-html-5"
+        },
+        {
+          "name": "CSS",
+          "iconifyClass": "logos-css-3"
+        },
+        {
+          "name": "JavaScript",
+          "iconifyClass": "logos-javascript"
+        }
+      ]
+    },
+    {
+      "id": "R_kgDOG_vYHA",
+      "name": "Gruham",
+      "createdAt": "2022-11-09T20:41:33Z",
+      "url": "https://github.com/Souviksamanta34/gruham",
+      "description": "🌎 An open-source endeavor aims to replicate the core functionalities and user experience of the world-renowned e-commerce platform, Amazon. Our project is designed to provide developers with a practical and educational opportunity to explore various aspects of building a modern online marketplace.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "HTML",
+          "iconifyClass": "logos-html-5"
+        },
+        {
+          "name": "CSS",
+          "iconifyClass": "logos-css-3"
+        },
+        {
+          "name": "JavaScript",
+          "iconifyClass": "logos-javascript"
+        }
+      ]
+    },
+    {
+      "id": "R_kgDOG0_8uQ",
+      "name": "LetsTravel",
+      "createdAt": "2023-06-26T14:50:20Z",
+      "url": "https://github.com/Souviksamanta34/LetsTravel",
+      "description": "🌏 Let's Travel is a web application that allows users to explore and reserve various tour packages for their dream destinations. The application is built using modern web technologies, including ReactJS for the front end and Express with Mongoose for the back end. It uses MongoDB Atlas as the database to store and manage tour package information.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "Node.js",
+          "iconifyClass": "logos-nodejs"
+        },
+        {
+          "name": "JavaScript",
+          "iconifyClass": "logos-javascript"
+        },
+        {
+          "name": "React",
+          "iconifyClass": "logos-react"
+        },
+        {
+          "name": "MongoDB",
+          "iconifyClass": "simple-icons:mongodb"
+        }
+      ]
+    }  
+  ]
+}

@@ -1,4 +1,4 @@
-## :sparkles: Support us on GitHub — it makes a difference!
+## :sparkles: Project Link:  https://samantasouvik.me
 
 # Sections 📖
 
@@ -10,8 +10,6 @@
 ✔️ Articles\
 ✔️ Education and Training\
 ✔️ Get in Touch
-
-To explore a live example, **[click here](https://example-portfolio.github.io/)**
 
 # Duplicate and Utilize 📝
 

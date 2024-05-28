@@ -131,5 +131,6 @@ This section of the portfolio isn't customizable, but I have solutions for you:
 
 - Once you've completed the setup and followed all the steps above, it's time to publish your website!
 - I highly recommend using [Github Pages](https://create-react-app.dev/docs/deployment/#github-pages) for the easiest deployment process.
-- To deploy your website, you have two options. First, create a GitHub repository named `<your-github-username>.github.io`. Use this exact name—no variations.
+- To deploy your website, you have two options. First, create a GitHub repository named `<your-github-username>.github.io`. Use this exact name—no variation.
+
 - Next, generate a production build and deploy the

@@ -32,7 +32,7 @@ const socialMediaLinks = [
   /* Your Social Media Link */
   // github: "https://github.com/Souviksamanta34",
   // linkedin: "https://www.linkedin.com/in/souviksamanta34/",
-  // gmail: "souviksamanta34@gmail.com",
+  // gmail: "souviksamanta059@gmail.com",
   // gitlab: "https://gitlab.com/souviksamanta34",
   // facebook: "https://www.facebook.com/profile.php?id=100004782946237",
   // twitter: "https://twitter.com/souviksamanta34",
@@ -52,13 +52,13 @@ const socialMediaLinks = [
   },
   {
     name: "YouTube",
-    link: "https://www.youtube.com/@souviksamanta9908/",
+    link: "https://www.youtube.com/@souviksamanta059",
     fontAwesomeIcon: "fa-youtube", // Reference https://fontawesome.com/icons/youtube?style=brands
     backgroundColor: "#FF0000", // Reference https://simpleicons.org/?q=youtube
   },
   {
     name: "Gmail",
-    link: "mailto:souviksamanta34@gmail.com",
+    link: "mailto:souviksamanta059@gmail.com",
     fontAwesomeIcon: "fa-google", // Reference https://fontawesome.com/icons/google?style=brands
     backgroundColor: "#D14836", // Reference https://simpleicons.org/?q=gmail
   },

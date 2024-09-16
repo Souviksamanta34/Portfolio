@@ -20,7 +20,6 @@ const seo = {
 const greeting = {
   title: "Souvik Samanta",
   logo_name: "SouvikSamanta",
-  nickname: "devil_check",
   subTitle:
     "A passionate software developer and machine learning enthusiast, driven by the desire to create impactful, scalable solutions. With expertise in AI, data analysis, and full-stack development, I'm committed to shaping the future of technology through innovation.",
   resumeLink:

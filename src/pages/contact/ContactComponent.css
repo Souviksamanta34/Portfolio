@@ -39,15 +39,18 @@
 }
 
 .blog-heading-img-div {
+  padding-top: 50px;
   align-items: center;
   justify-content: center;
 }
 
 .contact-heading-text-div {
+  justify-content: center;
   text-align: center;
 }
 
 .blog-heading-text-div {
+  padding: 10px;
   text-align: center;
 }
 
@@ -71,7 +74,7 @@
   font-family: "Google Sans Medium";
   line-height: 1.1;
   text-align: center;
-  margin-top: 60px;
+  margin-top: 190px;
 }
 
 .blog-heading-text {

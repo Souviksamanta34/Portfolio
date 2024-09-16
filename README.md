@@ -1,4 +1,4 @@
-## :sparkles: Project Link:  https://samantasouvik.me
+## :sparkles: Project Link:  https://souviksamanta.tech
 
 # Sections 📖
 

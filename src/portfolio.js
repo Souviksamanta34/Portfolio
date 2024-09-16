@@ -20,7 +20,7 @@ const greeting = {
   logo_name: "SouvikSamanta",
   nickname: "devil_check",
   subTitle:
-    "An individual fueled by passion, constantly driven to contribute to holistic products that foster scalable technical systems, aimed at generating a meaningful impact.",
+    "A passionate software developer and machine learning enthusiast, driven by the desire to create impactful, scalable solutions. With expertise in AI, data analysis, and full-stack development, I'm committed to shaping the future of technology through innovation.",
   resumeLink:
     "My Resume - https://drive.google.com/file/d/1x4-w8zRxz5b0kSce5c2KkxuHIf-nPpMu/view?usp=sharing",
   portfolio_repository: "https://github.com/Souviksamanta34/Portfolio",

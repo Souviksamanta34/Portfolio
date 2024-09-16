@@ -22,7 +22,7 @@ const greeting = {
   subTitle:
     "An individual fueled by passion, constantly driven to contribute to holistic products that foster scalable technical systems, aimed at generating a meaningful impact.",
   resumeLink:
-    "https://drive.google.com/file/d/1csVas3liuf7_hktrdfy_LSiPlEQu7WBS/view?usp=sharing",
+    "My Resume - https://drive.google.com/file/d/1x4-w8zRxz5b0kSce5c2KkxuHIf-nPpMu/view?usp=sharing",
   portfolio_repository: "https://github.com/Souviksamanta34/Portfolio",
   githubProfile: "https://github.com/Souviksamanta34",
 };

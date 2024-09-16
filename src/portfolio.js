@@ -4,12 +4,11 @@ const settings = {
 };
 
 //SEO Related settings
-const seo = {
-  title: "Souvik's Portfolio",
-  description:
-    "An individual fueled by passion, constantly driven to contribute to holistic products that foster both sustainable social ecosystems and scalable technical systems, all aimed at generating a meaningful impact.",
+  const seo = {
+  title: "Souvik Samanta's Portfolio - Software Development | Machine Learning | Data Analysis",
+  description: "Explore Souvik Samanta's expertise in software development, machine learning, and data analysis. Discover innovative projects, AI-driven solutions, and cutting-edge algorithms shaping the future of technology.",
   og: {
-    title: "Souvik Samanta Portfolio",
+    title: "Souvik Samanta Portfolio - AI & Software Development Specialist",
     type: "website",
     url: "http://Souviksamanta.com/",
   },

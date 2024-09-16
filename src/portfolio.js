@@ -4,9 +4,11 @@ const settings = {
 };
 
 //SEO Related settings
-  const seo = {
-  title: "Souvik Samanta's Portfolio - Software Development | Machine Learning | Data Analysis",
-  description: "Explore Souvik Samanta's expertise in software development, machine learning, and data analysis. Discover innovative projects, AI-driven solutions, and cutting-edge algorithms shaping the future of technology.",
+const seo = {
+  title:
+    "Souvik Samanta's Portfolio - Software Development | Machine Learning | Data Analysis",
+  description:
+    "Explore Souvik Samanta's expertise in software development, machine learning, and data analysis. Discover innovative projects, AI-driven solutions, and cutting-edge algorithms shaping the future of technology.",
   og: {
     title: "Souvik Samanta Portfolio - AI & Software Development Specialist",
     type: "website",
@@ -22,7 +24,7 @@ const greeting = {
   subTitle:
     "A passionate software developer and machine learning enthusiast, driven by the desire to create impactful, scalable solutions. With expertise in AI, data analysis, and full-stack development, I'm committed to shaping the future of technology through innovation.",
   resumeLink:
-    "My Resume - https://drive.google.com/file/d/1x4-w8zRxz5b0kSce5c2KkxuHIf-nPpMu/view?usp=sharing",
+    "https://drive.google.com/file/d/1x4-w8zRxz5b0kSce5c2KkxuHIf-nPpMu/view?usp=sharing",
   portfolio_repository: "https://github.com/Souviksamanta34/Portfolio",
   githubProfile: "https://github.com/Souviksamanta34",
 };
@@ -398,7 +400,7 @@ const certifications = {
       subtitle: "- Duncan Pritchard",
       logo_path: "edinburgh.png",
       certificate_link:
-        "https://drive.google.com/file/d/1210HfwDjG3Gsuf-g3Z5jdom1oPfvuXms/view?usp=sharing",
+        "https://drive.google.com/file/d/1u3vGhje7pBkxdDYYTm7H93VEY-eVmmZT/view?usp=sharing",
       alt_name: "University of Edinburgh",
       color_code: "#8C151599",
     },
@@ -407,7 +409,7 @@ const certifications = {
       subtitle: "- Matthew Chung",
       logo_path: "Goldman-Sachs-Logo.png",
       certificate_link:
-        "https://drive.google.com/file/d/1bUEHF5PN1VLz7uat7nM74KwjxhBW8Hj9/view?usp=sharing",
+        "https://drive.google.com/file/d/14pT32YxAlsl2Q-_A4zRHAWjAu-khflr5/view?usp=sharing",
       alt_name: "Goldman Sachs",
       color_code: "#00000099",
     },
@@ -416,16 +418,16 @@ const certifications = {
       subtitle: "- Google Cerification Cloud Security Engineer",
       logo_path: "google_logo.png",
       certificate_link:
-        "https://drive.google.com/file/d/1RNtiACmVFotb7o0EeLeukpHll5EvmQ3-/view?usp=sharing",
+        "https://drive.google.com/file/d/1ZufMiiatv6Sahu63GgkeYTAjuOVvSiwd/view?usp=sharing",
       alt_name: "Google",
       color_code: "#0C9D5899",
     },
     {
-      title: "Accenture-Developer Virtual Experience Program",
+      title: "Accenture-Developer Experience Program",
       subtitle: "- Alex Aklson",
       logo_path: "accenture.png",
       certificate_link:
-        "https://drive.google.com/file/d/16Z32GIxsyUQrQSgSVh0WAI4hSxejfTrB/view?usp=sharing",
+        "https://drive.google.com/file/d/1AcHk0khFp45hy8HGXrZUU-GRhdPBmNxf/view?usp=sharing",
       alt_name: "Accenture",
       color_code: "#1F70C199",
     },
@@ -434,7 +436,7 @@ const certifications = {
       subtitle: "- Rich Weeks",
       logo_path: "cisco.png",
       certificate_link:
-        "https://drive.google.com/file/d/1usz4ORyUqAEdX3ZcrOxjvHkdAGz15d6z/view?usp=sharing",
+        "https://drive.google.com/file/d/1QxmGQ4MphNe5bxr2S7LyUEwE7-JZQ4wB/view?usp=sharing",
       alt_name: "Cisco",
       color_code: "#D83B0199",
     },
@@ -443,7 +445,7 @@ const certifications = {
       subtitle: "- Ryan Holbrook",
       logo_path: "kaggle2.png",
       certificate_link:
-        "https://drive.google.com/file/d/1fz_QnUmMtgkA2POT_7CCiliUI0kWxHlo/view?usp=sharing",
+        "https://drive.google.com/file/d/1SGuqPm4I3-nIwgtTZEtCZRJ1lBS3w1Od/view?usp=sharing",
       alt_name: "Kaggle",
       color_code: "#1F70C199",
     },
@@ -452,7 +454,7 @@ const certifications = {
       subtitle: "- Damien Carey",
       logo_path: "Oracle-logo.png",
       certificate_link:
-        "https://drive.google.com/file/d/1raT34_9NWz4xJddWOD88IhZz-EpQ7PFn/view?usp=sharing",
+        "https://drive.google.com/file/d/1PGQsXRcQDF045wEJSbu53p5qpt8xEX7e/view?usp=sharing",
       alt_name: "Oracle",
       color_code: "#0C9D5899",
     },
@@ -461,7 +463,7 @@ const certifications = {
       subtitle: "- Laura Quintana",
       logo_path: "cisco.png",
       certificate_link:
-        "https://drive.google.com/file/d/1yMP0iS7Rm5AbBl9ybjkdTNp-uL2SVc3v/view?usp=sharing",
+        "https://drive.google.com/file/d/10JXdhZFzqlvpeAOq_x9fVldjKZwWYB5E/view?usp=sharing",
       alt_name: "cyber.ai",
       color_code: "#00000099",
     },
@@ -470,7 +472,7 @@ const certifications = {
       subtitle: "- Forage",
       logo_path: "aws.png",
       certificate_link:
-        "https://drive.google.com/file/d/1wHg5aq7U__HOC_xOFroi1wVFN8fOM81c/view?usp=sharing",
+        "https://drive.google.com/file/d/1ebtDlkPipkZedD4vG_34LsQnoyfw4LkW/view?usp=sharing",
       alt_name: "AWS",
       color_code: "#2A73CC",
     },
@@ -488,7 +490,7 @@ const certifications = {
       subtitle: "- Prof. Madhavan Mukund",
       logo_path: "nptel_logo.png",
       certificate_link:
-        "https://drive.google.com/file/d/1v0Q_YsXSga3JugiV5rVbgBE7ztppmuzg/view?usp=sharing",
+        "https://drive.google.com/file/d/1wb9oQ-igJLVmY2QgH31RvODKIsZMBag9/view?usp=sharing",
       alt_name: "NPTEL",
       color_code: "#FFBB0099",
     },
@@ -528,44 +530,50 @@ const experience = {
     //       color: "#0879bf",
     //     },
     //   ],
-    //jo
     // },
     {
       title: "Internships",
       experiences: [
         {
           title: "Data Engineering Intern",
+          certificate_link:
+            "https://drive.google.com/file/d/1RHnuHbDhcstDAKWPRu-MadNaodqWGgna/view?usp=sharing",
           company: "Celebal Technologies",
-          company_url:
-            "https://celebaltech.com/",
+          company_url: "https://celebaltech.com/",
           logo_path: "Celebal.jpg",
           duration: "May 2023 - July 2023",
           location: "Work From Home",
-          description: 
+          description:
             " I played a pivotal role in designing and implementing data pipelines, enabling seamless extraction, transformation, and loading of diverse datasets. Collaborating with cross-functional teams, I contributed to database design, ensuring efficient data storage and retrieval for analytical purposes. Through continuous learning and adaptation, I played a role in delivering efficient and reliable data engineering solutions.",
         },
         {
           title: "Python Development Intern",
+          certificate_link:
+            "https://drive.google.com/file/d/1aDA370S2qKWOvqRHi6Q9fpueSU7GnlEJ/view?usp=sharing",
           company: " CodeClause",
           company_url: "https://codeclause.com/",
           logo_path: "CodeClause.png",
           duration: "June 2023 - Aug 2023",
           location: "Kolkata, India",
           description:
-             "I actively coded, tested, and optimized backend functionalities, honing my skills in algorithm design and data manipulation. Collaborating closely with the development team, I contributed to enhancing system performance and participated in troubleshooting to ensure seamless application functionality. Through continuous learning and adaptation, I played a role in delivering efficient and reliable Python-based solutions.",
+            "I actively coded, tested, and optimized backend functionalities, honing my skills in algorithm design and data manipulation. Collaborating closely with the development team, I contributed to enhancing system performance and participated in troubleshooting to ensure seamless application functionality. Through continuous learning and adaptation, I played a role in delivering efficient and reliable Python-based solutions.",
         },
         {
           title: "Android App Development",
+          certificate_link:
+            "https://drive.google.com/file/d/1otWaLH6n4SQ_pyUgQwEMDUmRKzBvvEjl/view?usp=sharing",
           company: "OASIS INFOBYTE",
           company_url: "https://oasisinfobyte.com/",
           logo_path: "Oasis.jpg",
           duration: "Oct 2023 - Present",
           location: "Kolkata, India",
           description:
-                " I collaborated on building innovative mobile applications, gaining hands-on experience in coding, debugging, and enhancing user interfaces. I contributed to the development lifecycle by participating in code reviews and implementing new features, fostering a dynamic and efficient team environment. Through problem-solving and adapting to evolving technologies, I helped create user-friendly and visually appealing Android apps.",
+            " I collaborated on building innovative mobile applications, gaining hands-on experience in coding, debugging, and enhancing user interfaces. I contributed to the development lifecycle by participating in code reviews and implementing new features, fostering a dynamic and efficient team environment. Through problem-solving and adapting to evolving technologies, I helped create user-friendly and visually appealing Android apps.",
         },
         {
           title: "Digital Marketing Intern",
+          certificate_link:
+            "https://drive.google.com/file/d/1vu9nVtx7HsFdv9FVplMbSNN7K9XqAzY8/view?usp=sharing",
           company: "IITB",
           company_url: "https://www.iitb.ac.in/",
           logo_path: "IITB.png",
@@ -581,6 +589,8 @@ const experience = {
       experiences: [
         {
           title: "Campus Ambassador",
+          certificate_link:
+            "https://drive.google.com/file/d/1x-6tqgu9PhHTNJ7uXfkuEccgAMhDUl8q/view?usp=sharing",
           company: "IIT Delhi",
           company_url: "https://home.iitd.ac.in/",
           logo_path: "IITD.png",
@@ -591,6 +601,8 @@ const experience = {
         },
         {
           title: "Anti-Ragging Committee (ARC) Squad Member",
+          certificate_link:
+            "https://drive.google.com/file/d/1ZufMiiatv6Sahu63GgkeYTAjuOVvSiwd/view?usp=sharing",
           company: "Techno Main Salt Lake ",
           company_url: "https://www.ticollege.ac.in/",
           logo_path: "tmsl5.png",
@@ -601,6 +613,8 @@ const experience = {
         },
         {
           title: "Internshala Student Partner",
+          certificate_link:
+            "https://drive.google.com/file/d/1anNMTNEHJxO7XyHXDvt9fFX2ziUcoLJd/view?usp=sharing",
           company: "Internshala",
           company_url: "https://internshala.com/",
           logo_path: "internshala.png",
@@ -609,7 +623,6 @@ const experience = {
           description:
             "I showcased exceptional dedication by ranking 3386 among 21,963 students from diverse Indian colleges. I effectively promoted Internshala and its offerings, demonstrating a genuine eagerness to tackle new challenges and contribute meaningfully. My role as an ISP underscored my commitment to education and collaboration, making me a valuable asset capable of providing a fresh and insightful perspective in various professional settings. ",
         },
-        
       ],
     },
   ],
@@ -685,7 +698,8 @@ const contactPageData = {
     title: "Blogs",
     subtitle:
       "To empower individuals at their core, I derive immense satisfaction from crafting impactful lessons that resonate on a personal level, fostering profound character transformation for each reader.",
-    link: "https://medium.com/@souviksamanta34/learning-ai-can-change-your-future-a-journey-into-the-world-of-possibilities-d1b1da5c69e1",
+    link:
+      "https://medium.com/@souviksamanta34/learning-ai-can-change-your-future-a-journey-into-the-world-of-possibilities-d1b1da5c69e1",
     avatar_image_path: "blogs_image.svg",
   },
   addressSection: {

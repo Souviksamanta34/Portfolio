@@ -63,3 +63,7 @@ body {
     line-height: normal;
   }
 }
+
+.experience-accord .al {
+  border-bottom-style: none;
+}

@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.c1462ee6.css",
-    "main.js": "./static/js/main.8565583b.js",
+    "main.css": "./static/css/main.c234576b.css",
+    "main.js": "./static/js/main.23ad6499.js",
     "static/media/portfolio.gif": "./static/media/portfolio.ed6c89f1485f23014ebd.gif",
     "static/media/fa-solid-900.svg": "./static/media/fa-solid-900.9fa614346b4e81decc62.svg",
     "static/media/android.jpg": "./static/media/android.97462382aa1cefa9cda0.jpg",
@@ -85,11 +85,11 @@
     "static/media/googleAssistant.svg": "./static/media/googleAssistant.1c2312558eb2e5f04a45.svg",
     "static/media/talksCardBackAlt.svg": "./static/media/talksCardBackAlt.018d87225926eee9ccc3.svg",
     "static/media/talksCardBack.svg": "./static/media/talksCardBack.7dc8695e60efbc2baab8.svg",
-    "main.c1462ee6.css.map": "./static/css/main.c1462ee6.css.map",
-    "main.8565583b.js.map": "./static/js/main.8565583b.js.map"
+    "main.c234576b.css.map": "./static/css/main.c234576b.css.map",
+    "main.23ad6499.js.map": "./static/js/main.23ad6499.js.map"
   },
   "entrypoints": [
-    "static/css/main.c1462ee6.css",
-    "static/js/main.8565583b.js"
+    "static/css/main.c234576b.css",
+    "static/js/main.23ad6499.js"
   ]
 }

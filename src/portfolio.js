@@ -5,8 +5,7 @@ const settings = {
 
 //SEO Related settings
 const seo = {
-  title:
-    "Souvik Samanta's Portfolio - Software Development | Machine Learning | Data Analysis",
+  title: "Souvik Samanta",
   description:
     "Explore Souvik Samanta's expertise in software development, machine learning, and data analysis. Discover innovative projects, AI-driven solutions, and cutting-edge algorithms shaping the future of technology.",
   og: {
@@ -601,7 +600,7 @@ const experience = {
         {
           title: "Anti-Ragging Committee (ARC) Squad Member",
           certificate_link:
-            "https://drive.google.com/file/d/1ZufMiiatv6Sahu63GgkeYTAjuOVvSiwd/view?usp=sharing",
+            "https://drive.google.com/file/d/1jUFJjLPJeG8_74SoWQrIbdSGOJRUb6wf/view?usp=sharing",
           company: "Techno Main Salt Lake ",
           company_url: "https://www.ticollege.ac.in/",
           logo_path: "tmsl5.png",

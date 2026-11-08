@@ -1,136 +1,61 @@
-## :sparkles: Project Link:  https://souviksamanta.tech
+# Souvik Samanta — Professional Portfolio
 
-# Sections 📖
+A responsive portfolio for an experienced software engineer working in applied AI, document intelligence, and cloud engineering. Content is based on the November 2026 CV and verified public GitHub repositories.
 
-✔️ Overview and About Me\
-✔️ Expertise \
-✔️ Open Source Projects on GitHub\
-✔️ Professional Journey\
-✔️ Achievements and Certifications 🏆\
-✔️ Articles\
-✔️ Education and Training\
-✔️ Get in Touch
+## Run locally
 
-# Duplicate and Utilize 📝
+Use Node.js 24 (minimum 22.12) and npm. No API keys are needed.
 
-- This website is fully constructed using the `react-js` library of `javascript`, requiring the installation of `nodejs` and `npm`
-- When installing `nodejs` and `npm`, ensure that the versions are equal to or greater than the ones indicated in the badges above
-- For those interested in contributing or simply storing the project, the repository can be forked by clicking the button in the top-right corner of this page
-- Once `nodejs` and `npm` are successfully installed, clone the repository to your local system using the following command:
-  ```bash
-   git clone https://github.com/example-portfolio/masterPortfolio.git
-  ```
-  This command will clone the entire repository to your system.
-- To download the necessary dependencies to your system, navigate to the directory where the cloned repository is located and execute the following command:
-  ```node
-  npm install
-  ```
-- The project is now ready to be used
-- To test it, use `npm start`, which will open the website locally in your browser.
-
-# Personalize for Your Own Portfolio ✒️
-
-In this project, there are four main aspects to customize for a different individual's portfolio: **package.json**, **Personal Details**, **GitHub Details**, and **Logo Splash**.
-
-### package.json
-
-Open this file, located in the primary cloned directory, choose a suitable "name", and modify the "homepage" to `https://<your-github-username>.github.io`. Ensure that you include `https://` to ensure proper font loading.
-
-### Personal Details
-
-The file `src/portfolio.js` contains comprehensive information about the individual. The file structure is as follows:
-
-```javascript
-// Home Page
-const greeting = {
-    ...
-}
-
-// Social Media
-const socialMediaLinks = {
-    ...
-}
-
-...
+```sh
+npm ci
+npm run dev
 ```
 
-To reflect your details on the portfolio website, modify the personal information, experience, education, social media, certifications, blog information, and contact details within the `src/portfolio.js` file.
+## Production
 
-### Changing Icons on the Homepage "What I Do" Section
-
-1. This section retrieves data from the "skills" section in the `portfolio.js` file.
-2. Visit the website: https://icon-sets.iconify.design/
-3. Search for the skill you wish to add.
-4. Select your preferred icon.
-5. Copy the text next to **Selected Icon** and replace it with the `fontAwesomeClassName` for that specific software skill.
-
-#### Using Custom Images Instead of Iconify Icons
-
-1. Place a valid image file in the `public/skills` folder
-2. Add the image name to the `imageSrc` attribute of the relevant softwareSkill
-3. Remove the `fontAwesomeClassName` property or leave it empty, as `imageSrc` takes precedence over it
-4. Apply custom styling to the `img` tag using the `style` property
-
-### GitHub Details
-
-The `git_data_fetcher.mjs` file in the main repository directory is used to fetch data (Pull requests, Issues, Organizations, Pinned projects, etc.) from your GitHub account.
-
-Inside the project, you'll find an `env.example` file. Create a new file named `.env` and copy the contents of `env.example` into it. The following environment variables are present in that file:
-
-```javascript
-GITHUB_TOKEN = your_token;
-GITHUB_USERNAME = your_username;
+```sh
+npm run build
+npm run preview
 ```
 
-You can generate a GitHub token as described [here](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token). When generating the token, grant all permissions. Add your GitHub username and the generated token to the `GITHUB_USERNAME` and `GITHUB_TOKEN` variables in the `.env` file.
+Deploy the `dist/` directory to a static host. Assets use relative paths so both root domains and GitHub Pages project paths work. Existing `#/home`, `#/projects`, `#/experience`, `#/education`, `#/opensource`, and `#/contact` bookmarks map to the new sections.
 
-Now, execute the following command (ensure you've run `npm install` first):
+For Docker, run `docker compose up --build` and visit port 3001. The multi-stage image serves the compiled site with nginx; it does not run the development server. Docker could not be executed in the authoring environment because it is not installed.
 
-```node
-node git_data_fetcher.mjs
+## Active source
+
+- `src-next/App.jsx`: sections, responsive menu, project filtering, accessible native case-study dialogs, and contact interactions.
+- `src-next/content.js`: profile links, professional case studies, public repositories, and capabilities.
+- `src-next/styles.css`: responsive visual system and reduced-motion support.
+- `public-next/`: CV download, favicon, social image, and robots rules.
+- `index.html`: metadata and Person structured data.
+- `tests/`: component and real-browser tests.
+- `docs/SOURCES.md`: factual provenance and content boundaries.
+
+In the original checkout, `src/`, `public/`, and `images/` retain the previous design as a migration reference. Vite uses only `src-next/` and `public-next/`; legacy files are excluded from the production build and clean source deliverable. The old GitHub fetcher is retired and requires dependencies that are intentionally no longer installed. Edit `content.js` to maintain public projects.
+
+## Content and privacy
+
+Only the three reviewed public repositories are featured. Private repositories, client data, employer source code, and forks presented as original work are excluded. Professional TCS case studies use CV/public-profile summaries. The 100% extraction result is explicitly qualified as a 10-record experiment.
+
+The current CV is included as a local download; email contact uses a mailto link, and there is no pretend contact form. LinkedIn could not be read because its server blocked retrieval, so the link in the supplied CV is used. No ad scripts, analytics, backend keys, or runtime GitHub tokens are included. Google Fonts supplies the typography with local sans-serif fallbacks.
+
+## Tests
+
+```sh
+npm test
+npm run test:e2e
+npm run check
 ```
 
-This command will fetch data from your GitHub and replace my data with yours. Run this command whenever you need to update GitHub-related information on the website.
+Playwright uses Google Chrome (installed separately) and validates the production build at desktop, 390px, and 320px widths. On CI, Chrome is installed with `npx playwright install --with-deps chrome`. See `TEST-CASES.md` for coverage and limits. The GitHub Actions workflow performs installation, tests, build, browser checks, and failure-report upload.
 
-### Logo Splash
+Before a public domain launch, set `og:url`, canonical URL, and the absolute `og:image` to that deployment's actual HTTPS origin. The private preview package has its own origin applied. Check the CV and any employer-related descriptions when changing what is public.
 
-Please note that if you visit [my portfolio](https://example-portfolio.github.io), you'll see an animated logo at the beginning. I designed this logo using [`Figma`](https://www.figma.com/) and animated it using CSS.
-This section of the portfolio isn't customizable, but I have solutions for you:
+## Credential remediation
 
-- Design your own logo using `Figma`, `Adobe XD`, `Adobe Illustrator`, or `Inkscape`. To animate it, refer to the files in the `./src/components/Loader` directory, which contain the JavaScript and CSS code for the animation.
-- If you don't want a splash screen or don't know how to design a logo, follow these steps:
+The original repository committed a GitHub token in `env.example`. The current example has been sanitized, but the owner must revoke the original token; removing a value does not revoke it or remove it from Git history. Research also found a hardcoded Stripe test secret in Gruham's payment function; rotate it in that separate project. No credential values are copied into this website or documentation.
 
-  - Open the `src/portfolio.js` file and find the `settings` component at the top:
-    ```javascript
-    // Website related settings
-    const settings = {
-      isSplash: true,
-    };
-    ```
-  - Change `isSplash` from `true` to `false`
-  - Running `npm start` will now directly open the `home` page without the logo animation
-  - If you design a logo in the future, edit the files in `./src/components/Loader` and set `isSplash` back to `true` in `src/portfolio.js`.
+## License
 
-## Other Customizations
-
-- Modify the website title and other descriptions in `public/index.html`
-- Define your own favicon in the `public/icons` directory. If you don't have a favicon, you can generate one using [Favicon Generator](https://www.favicon-generator.org/) and [Favicon IO](https://favicon.io/)
-- Edit your website preview (known as the description image). Capture a screenshot of your site running locally, and replace `public/icons/desc.png` with the screenshot. Ensure the screenshot size is 1280x640 for optimal preview.
-
-# Choose a Theme 🌈
-
-- Examine the `src/theme.js` file for available themes and their respective color codes
-- At the end of this file, you'll find the following code:
-  - `export const chosenTheme = blueTheme;`
-  - Replace `blueTheme` with the name of your desired theme
-  - You can define new themes in the same manner as existing ones and assign the name of your new theme to `chosenTheme`
-- That's it! Changing the theme name will handle the rest
-- Verify everything is working by running `npm start`.
-
-# Deployment 📦
-
-- Once you've completed the setup and followed all the steps above, it's time to publish your website!
-- I highly recommend using [Github Pages](https://create-react-app.dev/docs/deployment/#github-pages) for the easiest deployment process.
-- To deploy your website, you have two options. First, create a GitHub repository named `<your-github-username>.github.io`. Use this exact name—no variation.
-
-- Next, generate a production build and deploy the
+The repository's Apache-2.0 license is retained.

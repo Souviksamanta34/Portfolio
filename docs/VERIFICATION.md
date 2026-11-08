@@ -1,0 +1,32 @@
+# Verification report — 9 November 2026
+
+- `npm run check`: passed against the production build.
+- Component tests: 23 passed.
+- Browser tests: 29 passed across desktop 1440px, mobile 390px and mobile 320px. One mobile-only test is intentionally skipped on desktop.
+- Axe automated accessibility checks: no critical or serious findings on the main page or open case-study dialog in the three tested viewports.
+- Manual visual review: desktop and 390px mobile hero/work layouts inspected.
+- Tested native dialog Escape, keyboard focus loop and restoration, body-scroll cleanup, mobile menu, project filters, clipboard success/failure, legacy bookmarks, safe external-link attributes, valid PDF download bytes, reduced motion, horizontal overflow and uncaught browser errors.
+- Production dependency audit: zero known vulnerabilities reported by npm at review time.
+- Build: JavaScript about 76.5 KB gzip; CSS about 6.2 KB gzip. Includes a local copy of the supplied CV.
+
+## Corrections found through tests
+
+Adjusted several small-text colors to meet contrast checks. Added a modal focus loop and moved focus restoration until after React removes the dialog. Corrected two test-harness issues involving fake timers and the menu button's changing accessible name.
+
+## Limits
+
+LinkedIn returned HTTP 999; the CV link is present, but the profile contents could not be checked. Email links were verified without sending messages. Clipboard outcomes are simulated in automated tests. Docker is not installed, so the Docker configuration was reviewed but not executed. CI workflow is provided; its remote GitHub run is not claimed. Chrome was tested; Safari and Firefox were not. Accessibility automation does not establish complete WCAG conformance. External repository visibility can change.
+
+## Security follow-up
+
+The GitHub token previously committed to env.example must be revoked by the owner. The current file is sanitized; Git history still retains the original. A separate public Gruham repository contains a Stripe test secret in its payment function; rotate that credential too. No credential values are included in the new source or built website.
+
+## Alignment correction - 9 November 2026
+
+Aligned the two selected-work cards by giving each card a shared height and placing its tags at the bottom of the flexible description area. The tags, separator, recognition text, and case-study actions now share the same baseline at 850px and 1200px widths. Verified visually at the affected width, passed 23 component tests and 29 browser tests after the change (one desktop skip for a mobile-only case).
+
+## Illustration label refinement - 9 November 2026
+
+Removed the decorative “FIG. 01” label from the hero illustration after review. The production build passed. The prior 23 component and 29 browser tests remain the latest full suite; no interaction or layout behavior changed in this text-only edit.
+
+Removed the decorative plus sign from the hero illustration after review because it resembled a button. This and the figure label are absent from the latest production build; no interactive behavior changed.

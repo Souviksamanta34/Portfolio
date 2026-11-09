@@ -36,3 +36,7 @@ Removed the decorative plus sign from the hero illustration after review because
 Revised the hero to name the work more directly, brought the two case studies' existing evidence into the cards, and added implementation details verified from the three public repositories. The financial extraction figure is explicitly limited to a 10-record experiment. No new employment impact numbers were introduced. The Gruham card links only to its GitHub source, per the owner's preference.
 
 The updated site was reviewed visually at desktop 1440px and mobile 390px/320px. Firefox and WebKit smoke checks at 1440px and 390px confirmed the primary heading, no horizontal overflow or page errors, and case-study dialog open/Escape behavior. These were automated desktop-browser emulations, not physical-phone tests.
+
+## Readability polish — 9 November 2026
+
+Increased supporting copy, project descriptions, evidence text, tags, and award metadata for easier scanning on small screens. Removed the decorative arrows from the four non-interactive recognition rows. Shortened the public project summaries so the implementation detail adds information instead of repeating the opening sentence.

@@ -718,7 +718,6 @@ export default function App() {
                   <strong>TCS AI Hackathon</strong>
                   <small>Winner</small>
                 </p>
-                <span className="award-arrow">↗</span>
               </div>
               <div>
                 <span>02</span>
@@ -726,7 +725,6 @@ export default function App() {
                   <strong>TCS Google Hackathon</strong>
                   <small>Top 10 · 2026 · Presented to Google</small>
                 </p>
-                <span className="award-arrow">↗</span>
               </div>
               <div>
                 <span>03</span>
@@ -734,7 +732,6 @@ export default function App() {
                   <strong>ACM India East Dissertation Award</strong>
                   <small>3rd place · 2024 · 200+ colleges</small>
                 </p>
-                <span className="award-arrow">↗</span>
               </div>
               <div>
                 <span>04</span>
@@ -742,7 +739,6 @@ export default function App() {
                   <strong>TCS CMI Unit CodeMaster</strong>
                   <small>3rd place</small>
                 </p>
-                <span className="award-arrow">↗</span>
               </div>
               <p className="additional-recognition">
                 Also selected for Amazon ML Summer School 2023.

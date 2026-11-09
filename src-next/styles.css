@@ -695,7 +695,7 @@ h2 > span {
 .case-body > .case-evidence {
   border-left: 2px solid #b7c7ae;
   padding-left: 11px;
-  font-size: 11px;
+  font-size: 12px;
   line-height: 1.6;
 }
 .case-evidence strong {
@@ -709,7 +709,7 @@ h2 > span {
   gap: 6px;
 }
 .tags > span {
-  font-size: 9px;
+  font-size: 10px;
   line-height: 1.5;
   border: 1px solid var(--line);
   padding: 5px 8px;
@@ -730,7 +730,7 @@ h2 > span {
   padding-top: 18px;
 }
 .case-bottom > span {
-  font-size: 9px;
+  font-size: 10px;
   color: var(--muted);
 }
 .text-button,
@@ -828,7 +828,7 @@ h2 > span {
   color: #635674;
 }
 .project-description > .eyebrow {
-  font-size: 8px;
+  font-size: 9px;
   color: var(--muted);
   letter-spacing: 1.1px;
 }
@@ -839,7 +839,7 @@ h2 > span {
   margin-top: 6px;
 }
 .project-description > p:not(.eyebrow) {
-  font-size: 12px;
+  font-size: 14px;
   color: var(--muted);
   line-height: 1.8;
   margin-top: 7px;
@@ -1064,18 +1064,13 @@ h2 > span {
   font-weight: 500;
 }
 .recognition small {
-  font-size: 10px;
+  font-size: 11px;
   color: var(--muted);
   display: block;
   margin-top: 6px;
 }
-.award-arrow {
-  margin-left: auto;
-  color: #97a08e;
-  font-size: 16px;
-}
 .additional-recognition {
-  font-size: 10px;
+  font-size: 11px;
   color: var(--muted);
   margin-top: 17px;
 }
@@ -1604,7 +1599,7 @@ h2 > span {
     gap: 10px;
   }
   .case-bottom > span {
-    font-size: 8px;
+    font-size: 10px;
     max-width: 160px;
   }
   .case-bottom .text-button {
@@ -1646,7 +1641,7 @@ h2 > span {
     font-size: 19px;
   }
   .project-description > p:not(.eyebrow) {
-    font-size: 12px;
+    font-size: 13px;
   }
   .project-end {
     grid-column: 2;
@@ -1894,6 +1889,7 @@ h2 > span {
   }
   .case-bottom > span {
     max-width: 130px;
+    font-size: 10px;
   }
   .case-bottom .text-button {
     font-size: 9px;

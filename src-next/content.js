@@ -68,8 +68,8 @@ export const projects = [
     year: "2026",
     type: "E-COMMERCE",
     description:
-      "A React storefront connecting account access, shopping carts, order history, and a Stripe test checkout.",
-    buildDetail: "Firebase account and order flows, with a Stripe test checkout handled by a Netlify function.",
+      "A React storefront with account access, shopping carts, order history, and a Stripe test checkout.",
+    buildDetail: "Firebase auth and order flows; a serverless Netlify payment function.",
     tags: ["React", "Firebase", "Stripe", "Netlify"],
     url: "https://github.com/Souviksamanta34/gruham",
     symbol: "G",
@@ -81,8 +81,8 @@ export const projects = [
     year: "2025",
     type: "ANDROID APPLICATION",
     description:
-      "Personalized stock-news feeds, watchlists, saved articles, sentiment views, and an API-backed chat assistant.",
-    buildDetail: "Java Android client using Firebase and REST APIs across news, analysis, and chat screens.",
+      "An Android stock-news app with watchlists, saved articles, sentiment views, and chat.",
+    buildDetail: "Java client wired to Firebase and REST APIs across news, analysis, and chat screens.",
     tags: ["Java", "Android", "Firebase", "REST APIs"],
     url: "https://github.com/Souviksamanta34/demo-001",
     symbol: "S",
@@ -94,8 +94,8 @@ export const projects = [
     year: "2023",
     type: "ACADEMIC MACHINE LEARNING",
     description:
-      "Exploring feature selection and neural-network classification on breast cancer data. An academic study, without clinical validation.",
-    buildDetail: "Notebook-based study combining mutual-information feature selection with a TensorFlow classifier.",
+      "An academic neural-network study on breast-cancer data with feature selection.",
+    buildDetail: "TensorFlow notebook using mutual information and scikit-learn evaluation; no clinical validation.",
     tags: ["Python", "TensorFlow", "scikit-learn"],
     url: "https://github.com/Souviksamanta34/Breast_Cancer_Classification_Using_NN",
     symbol: "N",

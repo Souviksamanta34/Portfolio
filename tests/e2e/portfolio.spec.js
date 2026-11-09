@@ -27,7 +27,7 @@ test("loads current professional content without browser errors or horizontal ov
   page.on("pageerror", (error) => errors.push(error.message));
   await page.reload();
   await expect(page.getByRole("heading", { level: 1 })).toHaveText(
-    "Engineering AI.Delivering impact.",
+    "AI systems.Built for real work.",
   );
   await expect(
     page.getByRole("heading", { name: "System Engineer", exact: true }),

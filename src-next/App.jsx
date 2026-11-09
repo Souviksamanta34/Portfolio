@@ -402,14 +402,14 @@ export default function App() {
               <span className="accent-line" /> SOFTWARE ENGINEER · APPLIED AI
             </p>
             <h1 id="hero-title">
-              Engineering AI.
+              AI systems.
               <br />
-              <span>Delivering impact.</span>
+              <span>Built for real work.</span>
             </h1>
             <p className="hero-description">
-              I’m Souvik. I build intelligent systems that turn complex problems
-              into practical solutions—from agentic workflows to financial
-              document intelligence.
+              I’m Souvik, a software engineer at TCS. I build human-reviewed
+              agent workflows for production incidents and document intelligence
+              pipelines for complex financial data.
             </p>
             <div className="hero-actions">
               <a className="button button-dark" href="#work">
@@ -499,6 +499,9 @@ export default function App() {
                   <p className="eyebrow">{study.category}</p>
                   <h3>{study.title}</h3>
                   <p>{study.summary}</p>
+                  <p className="case-evidence">
+                    <strong>Evidence</strong> {study.evidence}
+                  </p>
                   <div className="tags">
                     {study.tags.map((tag) => (
                       <span key={tag}>{tag}</span>
@@ -559,6 +562,7 @@ export default function App() {
                   <p className="eyebrow">{p.type}</p>
                   <h3>{p.name}</h3>
                   <p>{p.description}</p>
+                  <p className="project-detail">{p.buildDetail}</p>
                 </div>
                 <div className="project-end">
                   <div className="tags">

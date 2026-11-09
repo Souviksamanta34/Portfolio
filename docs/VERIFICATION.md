@@ -30,3 +30,9 @@ Aligned the two selected-work cards by giving each card a shared height and plac
 Removed the decorative “FIG. 01” label from the hero illustration after review. The production build passed. The prior 23 component and 29 browser tests remain the latest full suite; no interaction or layout behavior changed in this text-only edit.
 
 Removed the decorative plus sign from the hero illustration after review because it resembled a button. This and the figure label are absent from the latest production build; no interactive behavior changed.
+
+## Evidence and browser review — 9 November 2026
+
+Revised the hero to name the work more directly, brought the two case studies' existing evidence into the cards, and added implementation details verified from the three public repositories. The financial extraction figure is explicitly limited to a 10-record experiment. No new employment impact numbers were introduced. The Gruham card links only to its GitHub source, per the owner's preference.
+
+The updated site was reviewed visually at desktop 1440px and mobile 390px/320px. Firefox and WebKit smoke checks at 1440px and 390px confirmed the primary heading, no horizontal overflow or page errors, and case-study dialog open/Escape behavior. These were automated desktop-browser emulations, not physical-phone tests.

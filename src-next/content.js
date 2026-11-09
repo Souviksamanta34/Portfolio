@@ -20,6 +20,7 @@ export const caseStudies = [
       "An evidence-grounded workflow that connects incident investigation, repository context, and code remediation—with engineers in control.",
     tags: ["Google ADK", "Vertex AI", "Gemini", "Python"],
     recognition: "Top 10 · TCS Google Hackathon 2026",
+    evidence: "Presented to Google after a Top 10 finish at the TCS Google Hackathon 2026.",
     context:
       "Production incidents require engineers to move between logs, repositories, and code review. I developed a multi-agent system to connect these steps in a controlled investigation and remediation workflow.",
     contributions: [
@@ -43,6 +44,7 @@ export const caseStudies = [
       "Extracting financial tables, relationships, and context from complex PDFs, with quality checks and human validation built in.",
     tags: ["Azure OpenAI", "Document Intelligence", "Python"],
     recognition: "Multilingual extraction · Human validation",
+    evidence: "Cash-flow extraction reached 100% on a 10-record experiment; this is not a production-wide result.",
     context:
       "Balance sheets, income statements, and cash flow statements contain complex tables, hierarchies, and financial context. I developed a GenAI-assisted pipeline to extract and validate this information for downstream processing.",
     contributions: [
@@ -67,6 +69,7 @@ export const projects = [
     type: "E-COMMERCE",
     description:
       "A React storefront connecting account access, shopping carts, order history, and a Stripe test checkout.",
+    buildDetail: "Firebase account and order flows, with a Stripe test checkout handled by a Netlify function.",
     tags: ["React", "Firebase", "Stripe", "Netlify"],
     url: "https://github.com/Souviksamanta34/gruham",
     symbol: "G",
@@ -79,6 +82,7 @@ export const projects = [
     type: "ANDROID APPLICATION",
     description:
       "Personalized stock-news feeds, watchlists, saved articles, sentiment views, and an API-backed chat assistant.",
+    buildDetail: "Java Android client using Firebase and REST APIs across news, analysis, and chat screens.",
     tags: ["Java", "Android", "Firebase", "REST APIs"],
     url: "https://github.com/Souviksamanta34/demo-001",
     symbol: "S",
@@ -91,6 +95,7 @@ export const projects = [
     type: "ACADEMIC MACHINE LEARNING",
     description:
       "Exploring feature selection and neural-network classification on breast cancer data. An academic study, without clinical validation.",
+    buildDetail: "Notebook-based study combining mutual-information feature selection with a TensorFlow classifier.",
     tags: ["Python", "TensorFlow", "scikit-learn"],
     url: "https://github.com/Souviksamanta34/Breast_Cancer_Classification_Using_NN",
     symbol: "N",

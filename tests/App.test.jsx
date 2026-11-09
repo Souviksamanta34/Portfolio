@@ -10,9 +10,10 @@ describe("Professional content and usable destinations", () => {
     render(<App />);
     expect(screen.getAllByRole("heading", { level: 1 })).toHaveLength(1);
     expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent(
-      "Engineering AI.Delivering impact.",
+      "AI systems.Built for real work.",
     );
     expect(screen.getByText("2 years")).toBeInTheDocument();
+    expect(screen.getByText(/production incidents and document intelligence/)).toBeInTheDocument();
     expect(
       screen.getByRole("heading", { name: "System Engineer" }),
     ).toBeInTheDocument();

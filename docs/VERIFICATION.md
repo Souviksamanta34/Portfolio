@@ -44,3 +44,9 @@ Increased supporting copy, project descriptions, evidence text, tags, and award 
 ## Certification links — 9 November 2026
 
 Added five issuer-verified professional credentials: Databricks Machine Learning Professional, Databricks Machine Learning Engineer Associate, Databricks Data Engineer Professional, Databricks Data Engineer Associate, and Anthropic's Claude Certified Developer — Foundations. The three professional or foundation credentials are featured as cards; the two associate credentials are shown as compact links.
+
+## Certification layout refinement — 9 November 2026
+
+Moved professional certifications out of the education column into a full-width section. The three featured credentials now share a row with aligned verification actions; the two associate credentials sit below in two columns. Education and awards occupy their own balanced row. On phones, the cards and supporting rows stack, with larger titles and date labels.
+
+The production build, 24 component tests, and 29 Chrome browser tests passed (one desktop skip for a mobile-only test). Visual checks at 1440px, 850px, 390px, and 320px confirmed no horizontal overflow or clipped card text. Verification actions share the same baseline in both desktop layouts. All five official credential destinations are preserved.

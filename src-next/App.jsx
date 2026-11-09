@@ -261,6 +261,46 @@ function CaseVisual({ type }) {
   );
 }
 
+function ProfessionalCertifications() {
+  return (
+    <section className="professional-certifications" aria-labelledby="certifications-title">
+      <div className="certifications-heading">
+        <div>
+          <p className="eyebrow">CONTINUING EDUCATION</p>
+          <h3 id="certifications-title">Professional certifications.</h3>
+        </div>
+        <p>Machine learning, data engineering, and applied AI.</p>
+      </div>
+      <div className="certification-featured">
+        {certifications.filter((item) => item.featured).map((item) => (
+          <ExternalLink className="certification-card" href={item.url} key={item.name}>
+            <span className="certification-issuer">{item.issuer}</span>
+            <strong>{item.name}</strong>
+            <span className="certification-dates">
+              {item.date.split(" · ").map((date) => <span key={date}>{date}</span>)}
+            </span>
+            <span className="certification-action">View credential <Arrow diagonal /></span>
+          </ExternalLink>
+        ))}
+      </div>
+      <p className="certification-additional-label">Additional certifications</p>
+      <div className="certification-secondary">
+        {certifications.filter((item) => !item.featured).map((item) => (
+          <ExternalLink className="certification-row" href={item.url} key={item.name}>
+            <span className="certification-row-copy">
+              <strong>{item.name}</strong>
+              <span className="certification-dates">
+                {item.date.split(" · ").map((date) => <span key={date}>{date}</span>)}
+              </span>
+            </span>
+            <Arrow diagonal />
+          </ExternalLink>
+        ))}
+      </div>
+    </section>
+  );
+}
+
 function CaseDialog({ study, onClose }) {
   const dialog = useRef(null);
   useEffect(() => {
@@ -696,6 +736,7 @@ export default function App() {
               </article>
             ))}
           </div>
+          <ProfessionalCertifications />
           <div className="credentials">
             <div className="education">
               <p className="eyebrow">THE FOUNDATION</p>
@@ -714,40 +755,6 @@ export default function App() {
                 </span>
                 <p>Oracle Cloud Infrastructure</p>
                 <span>2023 Certified Foundations Associate</span>
-              </div>
-              <div className="professional-certifications">
-                <p className="eyebrow">PROFESSIONAL CERTIFICATIONS</p>
-                <div className="certification-featured">
-                  {certifications
-                    .filter((certification) => certification.featured)
-                    .map((certification) => (
-                      <ExternalLink
-                        className="certification-card"
-                        href={certification.url}
-                        key={certification.name}
-                      >
-                        <strong>{certification.name}</strong>
-                        <span>
-                          {certification.issuer} · {certification.date}
-                        </span>
-                        <small>Verify credential ↗</small>
-                      </ExternalLink>
-                    ))}
-                </div>
-                <div className="certification-secondary">
-                  {certifications
-                    .filter((certification) => !certification.featured)
-                    .map((certification) => (
-                      <ExternalLink
-                        className="certification-row"
-                        href={certification.url}
-                        key={certification.name}
-                      >
-                        <span>{certification.name}</span>
-                        <small>{certification.date} ↗</small>
-                      </ExternalLink>
-                    ))}
-                </div>
               </div>
             </div>
             <div className="recognition">

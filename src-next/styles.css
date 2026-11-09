@@ -997,10 +997,10 @@ h2 > span {
 }
 .credentials {
   display: grid;
-  grid-template-columns: 1fr 1.25fr;
-  gap: 85px;
-  margin-top: 85px;
-  padding-top: 55px;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  margin-top: 56px;
+  padding-top: 48px;
   border-top: 1px solid var(--line);
 }
 .education .eyebrow,
@@ -1015,7 +1015,7 @@ h2 > span {
   font-weight: 550;
 }
 .education > p:not(.eyebrow) {
-  font-size: 12px;
+  font-size: 14px;
   color: var(--muted);
   margin-top: 11px;
 }
@@ -1027,7 +1027,7 @@ h2 > span {
 }
 .education-grade small {
   font-family: "DM Sans", sans-serif;
-  font-size: 9px;
+  font-size: 11px;
   letter-spacing: 1px;
   color: var(--muted);
 }
@@ -1037,75 +1037,169 @@ h2 > span {
   margin-top: 24px;
 }
 .certifications p {
-  font-size: 11px;
+  font-size: 13px;
   margin-top: 12px;
 }
 .certifications > span {
-  font-size: 10px;
+  font-size: 12px;
   color: var(--muted);
   line-height: 1.7;
   display: block;
   margin-top: 4px;
 }
 .professional-certifications {
-  margin-top: 38px;
+  margin-top: 72px;
+  padding-top: 48px;
+  border-top: 1px solid var(--line);
 }
-.professional-certifications > .eyebrow {
-  margin-bottom: 14px;
+.certifications-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 32px;
+  margin-bottom: 28px;
+}
+.certifications-heading .eyebrow {
+  color: var(--accent);
+  margin-bottom: 10px;
+}
+.certifications-heading h3 {
+  font-size: clamp(26px, 2.4vw, 32px);
+  font-weight: 550;
+  letter-spacing: -1px;
+  line-height: 1.25;
+}
+.certifications-heading > p {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.7;
+  max-width: 300px;
 }
 .certification-featured {
   display: grid;
-  gap: 10px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
 }
 .certification-card {
-  display: block;
-  border: 1px solid var(--line);
-  padding: 13px 14px;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 26px;
+  border: 1px solid #d2d9ce;
+  border-top: 3px solid #61745c;
+  background: #f0f3ec;
   transition: border-color 0.2s, background 0.2s;
 }
 .certification-card:hover {
-  border-color: #aebaa8;
-  background: #f1f4ed;
+  border-color: #61745c;
+  background: #e9eee4;
+}
+.certification-issuer {
+  color: #495c45;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
 }
 .certification-card strong {
   display: block;
-  font-size: 12px;
-  line-height: 1.45;
-  font-weight: 600;
+  margin-block: 22px 24px;
+  font-size: 20px;
+  line-height: 1.4;
+  font-weight: 550;
+  letter-spacing: -0.4px;
 }
-.certification-card span,
-.certification-card small {
-  display: block;
+.certification-dates {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 16px;
   color: var(--muted);
-  font-size: 10px;
+  font-size: 12px;
   line-height: 1.6;
-  margin-top: 4px;
 }
-.certification-card small {
-  color: #3d5b3c;
-  margin-top: 8px;
+.certification-card > .certification-dates {
+  margin-top: auto;
+}
+.certification-action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  border-top: 1px solid #ccd5c7;
+  padding-top: 16px;
+  margin-top: 22px;
+  font-size: 13px;
+  font-weight: 550;
+  color: var(--green);
+}
+.certification-additional-label {
+  margin-top: 28px;
+  margin-bottom: 12px;
+  font-size: 13px;
+  color: var(--muted);
 }
 .certification-secondary {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
   border-top: 1px solid var(--line);
-  margin-top: 12px;
+  border-bottom: 1px solid var(--line);
 }
 .certification-row {
   display: flex;
   justify-content: space-between;
-  gap: 12px;
-  border-bottom: 1px solid var(--line);
-  padding-block: 11px;
-  color: var(--muted);
+  align-items: center;
+  gap: 18px;
+  padding-block: 20px;
+  color: var(--ink);
 }
-.certification-row span {
-  font-size: 11px;
+.certification-row:hover {
+  color: var(--accent);
+}
+.certification-row-copy {
+  min-width: 0;
+}
+.certification-row strong {
+  display: block;
+  font-size: 15px;
+  font-weight: 500;
   line-height: 1.5;
+  margin-bottom: 7px;
 }
-.certification-row small {
-  flex-shrink: 0;
-  font-size: 9px;
-  line-height: 1.6;
-  text-align: right;
+@media (max-width: 1000px) {
+  .certification-card {
+    padding: 20px;
+  }
+  .certification-card strong {
+    font-size: 18px;
+  }
+}
+@media (max-width: 700px) {
+  .professional-certifications {
+    margin-top: 48px;
+    padding-top: 32px;
+  }
+  .certifications-heading {
+    display: block;
+  }
+  .certifications-heading > p {
+    margin-top: 12px;
+  }
+  .certification-featured,
+  .certification-secondary {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  .certification-card strong {
+    font-size: 20px;
+    margin-block: 16px 18px;
+  }
+  .certification-secondary {
+    gap: 0;
+  }
+  .certification-row + .certification-row {
+    border-top: 1px solid var(--line);
+  }
 }
 .recognition > div {
   display: flex;
@@ -1120,17 +1214,17 @@ h2 > span {
   color: #626d5d;
 }
 .recognition strong {
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 500;
 }
 .recognition small {
-  font-size: 11px;
+  font-size: 13px;
   color: var(--muted);
   display: block;
   margin-top: 6px;
 }
 .additional-recognition {
-  font-size: 11px;
+  font-size: 12px;
   color: var(--muted);
   margin-top: 17px;
 }

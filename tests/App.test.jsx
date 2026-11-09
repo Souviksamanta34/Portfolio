@@ -3,7 +3,7 @@ import { describe, expect, it, vi } from "vitest";
 import { act, fireEvent, render, screen, within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import App from "../src-next/App.jsx";
-import { caseStudies, profile } from "../src-next/content.js";
+import { caseStudies, certifications, profile } from "../src-next/content.js";
 
 describe("Professional content and usable destinations", () => {
   it("presents one primary heading, current employment, experience and contact", () => {
@@ -27,6 +27,18 @@ describe("Professional content and usable destinations", () => {
     expect(
       screen.getByRole("link", { name: "Skip to content" }),
     ).toHaveAttribute("href", "#main");
+  });
+
+  it("shows verified professional certification links", () => {
+    render(<App />);
+    const links = certifications.map((certification) =>
+      screen.getByRole("link", { name: new RegExp(certification.name) }),
+    );
+    expect(links).toHaveLength(5);
+    links.forEach((link, index) => {
+      expect(link).toHaveAttribute("href", certifications[index].url);
+      expect(link).toHaveAttribute("target", "_blank");
+    });
   });
 
   it("provides internal anchors that resolve, usable external URLs and local résumé downloads", () => {

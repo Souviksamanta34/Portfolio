@@ -8,6 +8,16 @@ Primary: supplied Resume.pdf. Public corroboration: https://github.com/Souviksam
 
 Facts used: System Engineer at Tata Consultancy Services, November 2024–present; agentic incident-to-PR and financial-document-intelligence work; Celebal Technologies internship, May–July 2023; B.Tech CSE at Techno Main Salt Lake, 2020–2024, CGPA 8.82; CV-listed awards and certifications. The user's two-year experience statement agrees with the supplied employment dates as of this review.
 
+## Professional certifications
+
+The five credentials below were opened and verified on 9 November 2026. The portfolio links to the issuer verification pages and uses the official credential names shown there.
+
+- Databricks Certified Machine Learning Professional — https://credentials.databricks.com/fc23dd31-d344-460c-82e7-9a1fb4f11a5f
+- Databricks Certified Machine Learning Engineer Associate — https://credentials.databricks.com/9cf076da-6175-43c5-b151-eb87dde69a71
+- Databricks Certified Data Engineer Professional — https://credentials.databricks.com/5c925d85-b7e9-4c2b-90c9-6ef09d9e53bc
+- Databricks Certified Data Engineer Associate — https://credentials.databricks.com/83d89cd4-4bb9-46e9-a7c0-19e9e152749c
+- Claude Certified Developer — Foundations, issued by Anthropic — https://www.credly.com/badges/8652c7e4-d363-462a-aa72-c7e9ec7e11ce/public_url
+
 Professional case studies are summarized from the CV/public profile. No private repository code, proprietary documents, client names, or private project links are included. The extraction experiment was 100% on **10 records**; this is not generalized to production accuracy. The Celebal 60% retrieval-time improvement is a CV claim, not an independently reproduced benchmark.
 
 LinkedIn URL from the CV: https://www.linkedin.com/in/souvik-samanta-17a3071ba . Retrieval returned HTTP 999. No claims were inferred from similarly named LinkedIn profiles. The older repository used a different vanity URL.

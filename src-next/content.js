@@ -128,3 +128,41 @@ export const capabilities = [
     skills: ["Python", "Java", "C++", "JavaScript", "Docker", "Kubernetes"],
   },
 ];
+
+export const certifications = [
+  {
+    name: "Databricks Certified Machine Learning Professional",
+    issuer: "Databricks",
+    date: "Issued Nov 2026 · Expires Nov 2028",
+    url: "https://credentials.databricks.com/fc23dd31-d344-460c-82e7-9a1fb4f11a5f",
+    featured: true,
+  },
+  {
+    name: "Databricks Certified Data Engineer Professional",
+    issuer: "Databricks",
+    date: "Issued Oct 2026 · Expires Oct 2028",
+    url: "https://credentials.databricks.com/5c925d85-b7e9-4c2b-90c9-6ef09d9e53bc",
+    featured: true,
+  },
+  {
+    name: "Claude Certified Developer — Foundations",
+    issuer: "Anthropic",
+    date: "Issued Oct 2026 · Expires Oct 2027",
+    url: "https://www.credly.com/badges/8652c7e4-d363-462a-aa72-c7e9ec7e11ce/public_url",
+    featured: true,
+  },
+  {
+    name: "Databricks Certified Machine Learning Engineer Associate",
+    issuer: "Databricks",
+    date: "Issued Nov 2026 · Expires Nov 2028",
+    url: "https://credentials.databricks.com/9cf076da-6175-43c5-b151-eb87dde69a71",
+    featured: false,
+  },
+  {
+    name: "Databricks Certified Data Engineer Associate",
+    issuer: "Databricks",
+    date: "Issued Oct 2026 · Expires Oct 2028",
+    url: "https://credentials.databricks.com/83d89cd4-4bb9-46e9-a7c0-19e9e152749c",
+    featured: false,
+  },
+];

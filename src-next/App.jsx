@@ -1,5 +1,11 @@
 import React, { useEffect, useRef, useState } from "react";
-import { profile, caseStudies, projects, capabilities } from "./content.js";
+import {
+  profile,
+  caseStudies,
+  projects,
+  capabilities,
+  certifications,
+} from "./content.js";
 
 export function Arrow({ diagonal = false, ...props }) {
   return (
@@ -708,6 +714,40 @@ export default function App() {
                 </span>
                 <p>Oracle Cloud Infrastructure</p>
                 <span>2023 Certified Foundations Associate</span>
+              </div>
+              <div className="professional-certifications">
+                <p className="eyebrow">PROFESSIONAL CERTIFICATIONS</p>
+                <div className="certification-featured">
+                  {certifications
+                    .filter((certification) => certification.featured)
+                    .map((certification) => (
+                      <ExternalLink
+                        className="certification-card"
+                        href={certification.url}
+                        key={certification.name}
+                      >
+                        <strong>{certification.name}</strong>
+                        <span>
+                          {certification.issuer} · {certification.date}
+                        </span>
+                        <small>Verify credential ↗</small>
+                      </ExternalLink>
+                    ))}
+                </div>
+                <div className="certification-secondary">
+                  {certifications
+                    .filter((certification) => !certification.featured)
+                    .map((certification) => (
+                      <ExternalLink
+                        className="certification-row"
+                        href={certification.url}
+                        key={certification.name}
+                      >
+                        <span>{certification.name}</span>
+                        <small>{certification.date} ↗</small>
+                      </ExternalLink>
+                    ))}
+                </div>
               </div>
             </div>
             <div className="recognition">

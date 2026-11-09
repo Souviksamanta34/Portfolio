@@ -40,3 +40,7 @@ The updated site was reviewed visually at desktop 1440px and mobile 390px/320px.
 ## Readability polish — 9 November 2026
 
 Increased supporting copy, project descriptions, evidence text, tags, and award metadata for easier scanning on small screens. Removed the decorative arrows from the four non-interactive recognition rows. Shortened the public project summaries so the implementation detail adds information instead of repeating the opening sentence.
+
+## Certification links — 9 November 2026
+
+Added five issuer-verified professional credentials: Databricks Machine Learning Professional, Databricks Machine Learning Engineer Associate, Databricks Data Engineer Professional, Databricks Data Engineer Associate, and Anthropic's Claude Certified Developer — Foundations. The three professional or foundation credentials are featured as cards; the two associate credentials are shown as compact links.

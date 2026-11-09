@@ -1047,6 +1047,66 @@ h2 > span {
   display: block;
   margin-top: 4px;
 }
+.professional-certifications {
+  margin-top: 38px;
+}
+.professional-certifications > .eyebrow {
+  margin-bottom: 14px;
+}
+.certification-featured {
+  display: grid;
+  gap: 10px;
+}
+.certification-card {
+  display: block;
+  border: 1px solid var(--line);
+  padding: 13px 14px;
+  transition: border-color 0.2s, background 0.2s;
+}
+.certification-card:hover {
+  border-color: #aebaa8;
+  background: #f1f4ed;
+}
+.certification-card strong {
+  display: block;
+  font-size: 12px;
+  line-height: 1.45;
+  font-weight: 600;
+}
+.certification-card span,
+.certification-card small {
+  display: block;
+  color: var(--muted);
+  font-size: 10px;
+  line-height: 1.6;
+  margin-top: 4px;
+}
+.certification-card small {
+  color: #3d5b3c;
+  margin-top: 8px;
+}
+.certification-secondary {
+  border-top: 1px solid var(--line);
+  margin-top: 12px;
+}
+.certification-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  border-bottom: 1px solid var(--line);
+  padding-block: 11px;
+  color: var(--muted);
+}
+.certification-row span {
+  font-size: 11px;
+  line-height: 1.5;
+}
+.certification-row small {
+  flex-shrink: 0;
+  font-size: 9px;
+  line-height: 1.6;
+  text-align: right;
+}
 .recognition > div {
   display: flex;
   align-items: center;

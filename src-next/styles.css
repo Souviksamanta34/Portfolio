@@ -1031,22 +1031,6 @@ h2 > span {
   letter-spacing: 1px;
   color: var(--muted);
 }
-.certifications {
-  border-left: 2px solid #d5ddcf;
-  padding-left: 17px;
-  margin-top: 24px;
-}
-.certifications p {
-  font-size: 13px;
-  margin-top: 12px;
-}
-.certifications > span {
-  font-size: 12px;
-  color: var(--muted);
-  line-height: 1.7;
-  display: block;
-  margin-top: 4px;
-}
 .professional-certifications {
   margin-top: 72px;
   padding-top: 48px;

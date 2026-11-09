@@ -748,14 +748,6 @@ export default function App() {
               <span className="education-grade">
                 8.82 <small>/ 10 CGPA</small>
               </span>
-              <div className="certifications">
-                <p>NPTEL · IIT Madras</p>
-                <span>
-                  Programming, Data Structures & Algorithms using Python
-                </span>
-                <p>Oracle Cloud Infrastructure</p>
-                <span>2023 Certified Foundations Associate</span>
-              </div>
             </div>
             <div className="recognition">
               <p className="eyebrow">RECOGNITION ALONG THE WAY</p>

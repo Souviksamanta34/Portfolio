@@ -77,9 +77,8 @@ function Header() {
           className="brand"
           href="#home"
           onClick={() => setOpen(false)}
-          aria-label="Souvik Samanta, home"
         >
-          <span className="monogram">
+          <span className="monogram" aria-hidden="true">
             s<span>.</span>
           </span>
           <span>
@@ -261,6 +260,27 @@ function CaseVisual({ type }) {
   );
 }
 
+export function certificationExpired(item, today = new Date()) {
+  const expiry = item.date?.match(/Expires (\w+) (\d{4})/);
+  if (!expiry) return false;
+  const month = new Date(`${expiry[1]} 1, ${expiry[2]}`).getMonth();
+  return today >= new Date(Number(expiry[2]), month + 1, 1);
+}
+
+function CertificationCard({ item }) {
+  return (
+    <ExternalLink className="certification-card" href={item.url}>
+      <span className="certification-issuer">{item.issuer}</span>
+      <strong>{item.name}</strong>
+      <span className="certification-dates">
+        {item.date ? item.date.split(" · ").map((date) => <span key={date}>{date}</span>) : <span>Issue and expiry details on credential</span>}
+        {certificationExpired(item) && <span className="certification-expired">Expired</span>}
+      </span>
+      <span className="certification-action">View credential <Arrow diagonal /></span>
+    </ExternalLink>
+  );
+}
+
 function ProfessionalCertifications() {
   return (
     <section className="professional-certifications" aria-labelledby="certifications-title">
@@ -273,30 +293,10 @@ function ProfessionalCertifications() {
       </div>
       <div className="certification-featured">
         {certifications.filter((item) => item.featured).map((item) => (
-          <ExternalLink className="certification-card" href={item.url} key={item.name}>
-            <span className="certification-issuer">{item.issuer}</span>
-            <strong>{item.name}</strong>
-            <span className="certification-dates">
-              {item.date.split(" · ").map((date) => <span key={date}>{date}</span>)}
-            </span>
-            <span className="certification-action">View credential <Arrow diagonal /></span>
-          </ExternalLink>
+          <CertificationCard item={item} key={item.url} />
         ))}
       </div>
-      <p className="certification-additional-label">Additional certifications</p>
-      <div className="certification-secondary">
-        {certifications.filter((item) => !item.featured).map((item) => (
-          <ExternalLink className="certification-row" href={item.url} key={item.name}>
-            <span className="certification-row-copy">
-              <strong>{item.name}</strong>
-              <span className="certification-dates">
-                {item.date.split(" · ").map((date) => <span key={date}>{date}</span>)}
-              </span>
-            </span>
-            <Arrow diagonal />
-          </ExternalLink>
-        ))}
-      </div>
+      <a className="certifications-all" href="#/certifications">View all certifications <Arrow /></a>
     </section>
   );
 }
@@ -385,7 +385,62 @@ function CaseDialog({ study, onClose }) {
   );
 }
 
+function CertificationsPage() {
+  const issueTime = (item) => {
+    const issued = item.date?.match(/Issued (\w+ \d{4})/);
+    return issued ? Date.parse(`1 ${issued[1]}`) : 0;
+  };
+  const ordered = [...certifications].sort((a, b) =>
+    Number(b.featured) - Number(a.featured) || issueTime(b) - issueTime(a),
+  );
+  return (
+    <>
+      <a className="skip-link" href="#main">Skip to content</a>
+      <Header />
+      <main id="main" className="shell certification-page">
+        <a className="certifications-back" href="#certifications-title">← Back to portfolio</a>
+        <div className="certifications-intro">
+          <p className="eyebrow">CONTINUING EDUCATION</p>
+          <h1 tabIndex={-1}>All certifications.</h1>
+          <p>Ongoing learning in applied AI, machine learning, data engineering, and cloud development.</p>
+        </div>
+        <div className="certification-featured certification-collection">
+          {ordered.map((item) => <CertificationCard key={item.url} item={item} />)}
+        </div>
+        <a className="certifications-all" href="#contact">Let’s talk <Arrow /></a>
+      </main>
+    </>
+  );
+}
+
 export default function App() {
+  const [hash, setHash] = useState(() => window.location.hash);
+  const isCollection = hash === "#/certifications";
+  const firstRender = useRef(true);
+  useEffect(() => {
+    const update = () => setHash(window.location.hash);
+    window.addEventListener("hashchange", update);
+    return () => window.removeEventListener("hashchange", update);
+  }, []);
+  useEffect(() => {
+    document.title = isCollection ? "Certifications | Souvik Samanta" : "Souvik Samanta — Software Engineer & Applied AI";
+    if (isCollection) {
+      document.querySelector("h1")?.scrollIntoView();
+      if (!firstRender.current) document.querySelector("h1")?.focus({ preventScroll: true });
+    } else if (!firstRender.current) {
+      const target = document.getElementById(window.location.hash.slice(1) || "home");
+      target?.scrollIntoView();
+      if (target) {
+        target.setAttribute("tabindex", "-1");
+        target.focus({ preventScroll: true });
+      }
+    }
+    firstRender.current = false;
+  }, [isCollection]);
+  return isCollection ? <CertificationsPage /> : <Portfolio />;
+}
+
+function Portfolio() {
   const [filter, setFilter] = useState("All");
   const [selected, setSelected] = useState(null);
   const [copyState, setCopyState] = useState("");

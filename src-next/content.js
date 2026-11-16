@@ -131,6 +131,24 @@ export const capabilities = [
 
 export const certifications = [
   {
+    name: "Claude Certified Associate — Foundations",
+    issuer: "Anthropic",
+    url: "https://www.credly.com/badges/720ff470-f91e-4ea5-81d5-5a223eb95d2d/public_url",
+    featured: false,
+  },
+  {
+    name: "Claude Certified Architect — Foundations",
+    issuer: "Anthropic",
+    url: "https://www.credly.com/badges/692535ae-6fd8-4eb3-8cf6-af9a6ebffc74/public_url",
+    featured: false,
+  },
+  {
+    name: "AWS Certified Developer — Associate",
+    issuer: "Amazon Web Services",
+    url: "https://www.credly.com/badges/f0ebfa5c-bece-472c-b0e6-d32a07b2bb13/public_url",
+    featured: false,
+  },
+  {
     name: "Databricks Certified Machine Learning Professional",
     issuer: "Databricks",
     date: "Issued Nov 2026 · Expires Nov 2028",

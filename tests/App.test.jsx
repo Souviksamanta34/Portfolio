@@ -2,10 +2,29 @@ import React from "react";
 import { describe, expect, it, vi } from "vitest";
 import { act, fireEvent, render, screen, within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import App from "../src-next/App.jsx";
+import App, { certificationExpired } from "../src-next/App.jsx";
 import { caseStudies, certifications, profile } from "../src-next/content.js";
 
 describe("Professional content and usable destinations", () => {
+  it("opens the complete collection directly with safe verification links", () => {
+    window.history.replaceState(null, "", "#/certifications");
+    render(<App />);
+    expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent("All certifications.");
+    for (const item of certifications) {
+      const link = screen.getByRole("link", { name: new RegExp(item.name) });
+      expect(link).toHaveAttribute("href", item.url);
+      expect(link).toHaveAttribute("rel", "noopener noreferrer");
+    }
+    expect(document.querySelectorAll(".certification-card")).toHaveLength(8);
+    expect(screen.getByRole("link", { name: /Back to portfolio/ })).toHaveAttribute("href", "#certifications-title");
+  });
+
+  it("marks known expired months without guessing missing expiry dates", () => {
+    const item = { date: "Issued Oct 2026 · Expires Oct 2027" };
+    expect(certificationExpired(item, new Date(2027, 9, 31))).toBe(false);
+    expect(certificationExpired(item, new Date(2027, 10, 1))).toBe(true);
+    expect(certificationExpired({}, new Date(2030, 0, 1))).toBe(false);
+  });
   it("presents one primary heading, current employment, experience and contact", () => {
     render(<App />);
     expect(screen.getAllByRole("heading", { level: 1 })).toHaveLength(1);
@@ -31,19 +50,21 @@ describe("Professional content and usable destinations", () => {
 
   it("shows verified professional certification links", () => {
     render(<App />);
-    const links = certifications.map((certification) =>
+    const featured = certifications.filter((item) => item.featured);
+    const links = featured.map((certification) =>
       screen.getByRole("link", { name: new RegExp(certification.name) }),
     );
-    expect(links).toHaveLength(5);
+    expect(links).toHaveLength(3);
+    expect(screen.getByRole("link", { name: "View all certifications" })).toHaveAttribute("href", "#/certifications");
     links.forEach((link, index) => {
-      expect(link).toHaveAttribute("href", certifications[index].url);
+      expect(link).toHaveAttribute("href", featured[index].url);
       expect(link).toHaveAttribute("target", "_blank");
     });
   });
 
   it("provides internal anchors that resolve, usable external URLs and local résumé downloads", () => {
     const { container } = render(<App />);
-    for (const link of container.querySelectorAll('a[href^="#"]')) {
+    for (const link of container.querySelectorAll('a[href^="#"]:not([href^="#/"])')) {
       expect(
         document.getElementById(link.getAttribute("href").slice(1)),
         link.outerHTML,

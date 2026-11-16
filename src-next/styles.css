@@ -1036,6 +1036,40 @@ h2 > span {
   padding-top: 48px;
   border-top: 1px solid var(--line);
 }
+.certifications-all {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 28px;
+  padding: 12px 0;
+  font-weight: 550;
+  border-bottom: 1px solid var(--ink);
+}
+.certification-page {
+  padding-top: 64px;
+  padding-bottom: 80px;
+}
+.certifications-back {
+  display: inline-block;
+  padding: 12px 0;
+  color: var(--muted);
+}
+.certifications-intro { margin: 40px 0; max-width: 720px; }
+.certifications-intro .eyebrow { color: var(--accent); }
+.certifications-intro h1 {
+  font-size: clamp(36px, 5vw, 60px);
+  line-height: 1.1;
+  letter-spacing: -1.5px;
+  margin: 16px 0 24px;
+  scroll-margin-top: 140px;
+}
+.certifications-intro > p:last-child { color: var(--muted); font-size: 18px; line-height: 1.7; }
+.certification-collection .certification-dates { font-size: 14px; }
+.certification-collection .certification-action { font-size: 15px; }
+.certification-expired { color: var(--accent); font-weight: 600; }
+@media (min-width: 701px) and (max-width: 1000px) {
+  .certification-collection { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
 .certifications-heading {
   display: flex;
   justify-content: space-between;

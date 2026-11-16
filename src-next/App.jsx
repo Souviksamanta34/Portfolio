@@ -413,9 +413,25 @@ function CertificationsPage() {
   );
 }
 
+function NotFoundPage() {
+  return (
+    <>
+      <a className="skip-link" href="#main">Skip to content</a>
+      <Header />
+      <main id="main" className="shell not-found-page">
+        <p className="eyebrow">404 · PAGE NOT FOUND</p>
+        <h1>That page doesn’t exist.</h1>
+        <p>The page may have moved, but the portfolio is still here.</p>
+        <a className="button" href="/">Return to portfolio <Arrow /></a>
+      </main>
+    </>
+  );
+}
+
 export default function App() {
   const [hash, setHash] = useState(() => window.location.hash);
   const isCollection = hash === "#/certifications";
+  const isUnknownPath = window.location.pathname !== "/";
   const firstRender = useRef(true);
   useEffect(() => {
     const update = () => setHash(window.location.hash);
@@ -437,7 +453,7 @@ export default function App() {
     }
     firstRender.current = false;
   }, [isCollection]);
-  return isCollection ? <CertificationsPage /> : <Portfolio />;
+  return isUnknownPath ? <NotFoundPage /> : isCollection ? <CertificationsPage /> : <Portfolio />;
 }
 
 function Portfolio() {

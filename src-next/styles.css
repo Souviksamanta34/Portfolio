@@ -1045,6 +1045,24 @@ h2 > span {
   font-weight: 550;
   border-bottom: 1px solid var(--ink);
 }
+.not-found-page {
+  min-height: 70vh;
+  display: grid;
+  align-content: center;
+  justify-items: start;
+  padding-block: 80px;
+}
+.not-found-page h1 {
+  margin: 18px 0 16px;
+  font-size: clamp(40px, 6vw, 76px);
+  line-height: 1.05;
+  letter-spacing: -2px;
+}
+.not-found-page > p:not(.eyebrow) {
+  margin-bottom: 28px;
+  color: var(--muted);
+  font-size: 18px;
+}
 .certification-page {
   padding-top: 64px;
   padding-bottom: 80px;

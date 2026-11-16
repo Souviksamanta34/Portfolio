@@ -17,19 +17,19 @@ export const caseStudies = [
     title: "From production incident to reviewed pull request.",
     shortTitle: "Agentic incident remediation",
     summary:
-      "An evidence-grounded workflow that connects incident investigation, repository context, and code remediation—with engineers in control.",
+      "A controlled multi-agent workflow that connects incident evidence, repository context, and code remediation—with engineers in control.",
     tags: ["Google ADK", "Vertex AI", "Gemini", "Python"],
     recognition: "Top 10 · TCS Google Hackathon 2026",
     evidence: "Presented to Google after a Top 10 finish at the TCS Google Hackathon 2026.",
     context:
-      "Production incidents require engineers to move between logs, repositories, and code review. I developed a multi-agent system to connect these steps in a controlled investigation and remediation workflow.",
+      "Production incidents force engineers to move between logs, repositories, and code review. I developed a multi-agent system that keeps those steps connected while preserving review at the point of change.",
     contributions: [
-      "Designed a coordinator with specialized log and Gitea agents to gather evidence and navigate repositories.",
-      "Integrated Google Cloud Logging and controlled Python tools for investigation, code changes, and pull-request creation.",
-      "Used Gemini CLI to propose minimal patches grounded in the incident evidence, with mandatory human review before acceptance.",
+      "Separated coordination, log retrieval, and repository navigation into focused agents so each step had a clear responsibility.",
+      "Connected Google Cloud Logging and controlled Python tools for evidence gathering, code changes, and pull-request creation.",
+      "Used Gemini CLI to propose minimal, evidence-grounded patches, with mandatory human review before acceptance.",
     ],
     engineering:
-      "PII sanitization, prompt-injection protection, sandboxed execution, least-privilege access, private connectivity, and non-root containers were part of the design.",
+      "The design made security boundaries explicit: PII sanitization, prompt-injection protection, sandboxed execution, least-privilege access, private connectivity, and non-root containers.",
     outcome:
       "Placed in the Top 10 of the TCS Google Hackathon 2026 and presented the solution to Google.",
     note: "Professional work summary. Implementation details are limited to information in my CV and public profile.",
@@ -41,19 +41,19 @@ export const caseStudies = [
     title: "Turning financial documents into structured intelligence.",
     shortTitle: "Financial document intelligence",
     summary:
-      "Extracting financial tables, relationships, and context from complex PDFs, with quality checks and human validation built in.",
+      "A human-validated extraction pipeline for financial tables, relationships, and context in complex PDFs.",
     tags: ["Azure OpenAI", "Document Intelligence", "Python"],
     recognition: "Multilingual extraction · Human validation",
     evidence: "Cash-flow extraction reached 100% on a 10-record experiment; this is not a production-wide result.",
     context:
-      "Balance sheets, income statements, and cash flow statements contain complex tables, hierarchies, and financial context. I developed a GenAI-assisted pipeline to extract and validate this information for downstream processing.",
+      "Balance sheets, income statements, and cash flow statements combine tables, hierarchies, and financial context. I developed a GenAI-assisted pipeline that extracts this information and validates it before downstream processing.",
     contributions: [
       "Combined Azure Document Intelligence and Azure OpenAI to extract tables, metadata, contextual relationships, and mathematical relationships.",
-      "Supported multipage, image-based, multilingual documents and financial metadata including currency, units, periods, and negative values.",
+      "Handled multipage, image-based, multilingual documents and normalized currency, units, periods, and negative values.",
       "Built human validation, automated quality checks, supplementary-data processing, and CSV/ZIP output into the workflow.",
     ],
     engineering:
-      "The solution design used Azure App Service, API Management, Functions, Key Vault, Entra ID, Private Link, monitoring, and Content Safety.",
+      "The solution separated API access, processing, secrets, identity, private networking, monitoring, and content safety across Azure App Service, API Management, Functions, Key Vault, Entra ID, Private Link, and Content Safety.",
     outcome:
       "Fine-tuning experiments achieved 100% cash-flow extraction accuracy on a small 10-record test set. This was a limited evaluation, not a claim of production-wide accuracy.",
     note: "Professional work summary. No client documents, financial data, or proprietary code are published.",

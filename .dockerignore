@@ -1,0 +1,10 @@
+node_modules
+.git
+test-results
+playwright-report
+.env*
+env.example
+src
+public
+images
+dist

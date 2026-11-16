@@ -615,7 +615,7 @@ function Portfolio() {
                 <div className="case-body">
                   <p className="eyebrow">{study.category}</p>
                   <h3>{study.title}</h3>
-                  <p>{study.summary}</p>
+                  <p className="case-summary">{study.summary}</p>
                   <p className="case-evidence">
                     <strong>Evidence</strong> {study.evidence}
                   </p>

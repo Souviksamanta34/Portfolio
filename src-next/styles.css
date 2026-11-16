@@ -1203,6 +1203,9 @@ h2 > span {
   margin-bottom: 7px;
 }
 @media (max-width: 1000px) {
+  .case-summary {
+    min-height: calc(1.8em * 3);
+  }
   .certification-card {
     padding: 20px;
   }
@@ -1211,6 +1214,9 @@ h2 > span {
   }
 }
 @media (max-width: 700px) {
+  .case-summary {
+    min-height: 0;
+  }
   .professional-certifications {
     margin-top: 48px;
     padding-top: 32px;

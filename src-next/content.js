@@ -143,6 +143,12 @@ export const certifications = [
     featured: false,
   },
   {
+    name: "Claude Certified Developer — Professional",
+    issuer: "Anthropic",
+    url: "https://www.credly.com/badges/c44057b2-1d3d-4951-9a51-d14a86e87206/public_url",
+    featured: false,
+  },
+  {
     name: "AWS Certified Developer — Associate",
     issuer: "Amazon Web Services",
     url: "https://www.credly.com/badges/f0ebfa5c-bece-472c-b0e6-d32a07b2bb13/public_url",

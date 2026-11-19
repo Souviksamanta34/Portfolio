@@ -7,7 +7,7 @@ test("certifications navigate, reload, and return without overflow", async ({ pa
   await page.getByRole("link", { name: "View all certifications", exact: true }).click();
   await expect(page).toHaveURL(/#\/certifications$/);
   await expect(page.locator("h1")).toBeFocused();
-  await expect(page.locator(".certification-card")).toHaveCount(8);
+  await expect(page.locator(".certification-card")).toHaveCount(9);
   await page.reload();
   await expect(page.getByRole("heading", { level: 1 })).toHaveText("All certifications.");
   await expect(page).toHaveTitle("Certifications | Souvik Samanta");
@@ -17,7 +17,7 @@ test("certifications navigate, reload, and return without overflow", async ({ pa
   await expect(page.locator(".certification-card")).toHaveCount(3);
   await expect(page.locator("#certifications-title")).toBeInViewport();
   await page.goBack();
-  await expect(page.locator(".certification-card")).toHaveCount(8);
+  await expect(page.locator(".certification-card")).toHaveCount(9);
   await page.goForward();
   await expect(page.locator(".certification-card")).toHaveCount(3);
 });

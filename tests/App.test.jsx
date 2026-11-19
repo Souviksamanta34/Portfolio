@@ -15,7 +15,7 @@ describe("Professional content and usable destinations", () => {
       expect(link).toHaveAttribute("href", item.url);
       expect(link).toHaveAttribute("rel", "noopener noreferrer");
     }
-    expect(document.querySelectorAll(".certification-card")).toHaveLength(9);
+    expect(document.querySelectorAll(".certification-card")).toHaveLength(10);
     expect(screen.getByRole("link", { name: /Back to portfolio/ })).toHaveAttribute("href", "#certifications-title");
   });
 

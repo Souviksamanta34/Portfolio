@@ -55,6 +55,11 @@ describe("Professional content and usable destinations", () => {
       screen.getByRole("link", { name: new RegExp(certification.name) }),
     );
     expect(links).toHaveLength(3);
+    expect(featured.map((item) => item.name)).toEqual([
+      "Databricks Certified Machine Learning Professional",
+      "Databricks Certified Data Engineer Professional",
+      "Claude Certified Developer — Professional",
+    ]);
     expect(screen.getByRole("link", { name: "View all certifications" })).toHaveAttribute("href", "#/certifications");
     links.forEach((link, index) => {
       expect(link).toHaveAttribute("href", featured[index].url);

@@ -143,12 +143,6 @@ export const certifications = [
     featured: false,
   },
   {
-    name: "Claude Certified Developer — Professional",
-    issuer: "Anthropic",
-    url: "https://www.credly.com/badges/c44057b2-1d3d-4951-9a51-d14a86e87206/public_url",
-    featured: false,
-  },
-  {
     name: "Claude Certified Architect — Professional",
     issuer: "Anthropic",
     url: "https://www.credly.com/badges/a5bf612c-e02d-4825-bba5-c2468a6919a1/public_url",
@@ -175,11 +169,17 @@ export const certifications = [
     featured: true,
   },
   {
+    name: "Claude Certified Developer — Professional",
+    issuer: "Anthropic",
+    url: "https://www.credly.com/badges/c44057b2-1d3d-4951-9a51-d14a86e87206/public_url",
+    featured: true,
+  },
+  {
     name: "Claude Certified Developer — Foundations",
     issuer: "Anthropic",
     date: "Issued Oct 2026 · Expires Oct 2027",
     url: "https://www.credly.com/badges/8652c7e4-d363-462a-aa72-c7e9ec7e11ce/public_url",
-    featured: true,
+    featured: false,
   },
   {
     name: "Databricks Certified Machine Learning Engineer Associate",
